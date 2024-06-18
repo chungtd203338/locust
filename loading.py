@@ -27,6 +27,7 @@ class MyUser(HttpUser):
         row_duration = self.duration[self.duration_index]
         # self.duration_index += 1
 
+        # Total number of function calls in 1 day
         count = int(row_duration['Count'])
         # print(count)
         number = 1
@@ -40,6 +41,8 @@ class MyUser(HttpUser):
                 # print(random_int)
                 self.client.get(f"/workload.php/?value={random_int}")
                 number += 1
+                
+            # Simulate every minute as one second
             time.sleep(1)
 
         if x == 1440:
