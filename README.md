@@ -1,4 +1,3 @@
-# Trịnh Đức Chung - K65 - HUST <3
 # Trace data with Locust #
 # Cách sử dụng #
 Clone project về máy
